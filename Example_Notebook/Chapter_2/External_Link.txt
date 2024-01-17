@@ -3,11 +3,15 @@ https://tw.news.yahoo.com/most-popular - done
 NBA新聞查找
 https://tw-nba.udn.com/nba/cate/6754
 表格網址
-https://17app001.github.io/table_test/
+https://17app001.github.io/table_test/ 
 國泰世華匯率
 https://www.cathaybk.com.tw/cathaybk/personal/deposit-exchange/rate/currency-billboard/ - done
+玉山銀行匯率
+https://www.esunbank.com/zh-tw/personal/deposit/rate/forex/foreign-exchange-rates/ - done
 台灣銀行匯率
-https://rate.bot.com.tw/xrt?Lang=zh-TW
+https://rate.bot.com.tw/xrt?Lang=zh-TW/ -done
+彰化銀行匯率
+https://ae.chb.com.tw/accessible/faces/login/CERates_View/ -done
 
 
 
