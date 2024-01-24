@@ -3,6 +3,9 @@ import os
 from bs4 import BeautifulSoup
 
 def getSoup(url):
+  '''
+  Return html content with beautifulsoup format
+  '''
   try:
     resp=requests.get(url)
     resp.encoding='utf-8'
