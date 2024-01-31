@@ -1,6 +1,12 @@
 import requests
 import os
+import time
 from bs4 import BeautifulSoup
+from selenium import webdriver as WD
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service as Chrome_Sev
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.select import Select 
 
 def getSoup(url):
   '''
@@ -38,6 +44,27 @@ def ExportImage(Img_Url,Img_Name):
         strMsg = e
         
         return strMsg
+
+
+def get_chrome(Url,DriverPath='C:\Web driver\Chrome\chromedriver.exe'):
+    Test_Chrome = None
+    try:
+        ServiceChrome = Chrome_Sev(DriverPath)
+        Test_Chrome = WD.Chrome(service=ServiceChrome)
+        Test_Chrome.get(Url)
+        
+    except Exception as e:
+        print('Error:',e)
+
+    return Test_Chrome
+    
+def find_elemental(chrome,xpath):
+    element = None
+    try:
+      element=chrome.find_element(By.XPATH,xpath)
+    except Exception as e:
+       print('Error:', e)
+    return element
 
 #------Test Area-------
 if __name__ == '__name__':
