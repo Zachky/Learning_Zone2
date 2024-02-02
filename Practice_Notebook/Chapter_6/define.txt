@@ -1,0 +1,9 @@
+from tools import get_soup
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+
+url='https://www.ibon.com.tw/retail_inquiry.aspx#gsc.tab=0'
+
+chrome.execute_script("window.scrollTo(0, 1000)")
