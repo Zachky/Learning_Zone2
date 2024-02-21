@@ -58,7 +58,7 @@ def get_chrome(Url,DriverPath='C:\Web driver\Chrome\chromedriver.exe',hide=False
       options.add_argument('--headless')
     try:
         ServiceChrome = Chrome_Sev(DriverPath)
-        Test_Chrome = WD.Chrome(service=ServiceChrome)
+        Test_Chrome = WD.Chrome(service=ServiceChrome,options=options)
         Test_Chrome.get(Url)
         
     except Exception as e:
@@ -95,10 +95,17 @@ def scroll_windows(chrome,start,end,step,delayTime=0.2):
     except Exception as e:
        print(e)
 
-#------Test Area-------
+# ------Test Area-------
 if __name__ == '__name__':
   url="https://tw.yahoo.com"
   print(getSoup(url))
 
   ExportImage("http://www.atmovies.com.tw/photo101/fotw31435759/pl_fotw31435759_0002.jpg",'老狐狸 Old Fox')
+  chrome = get_chrome('https://tw.yahoo.com',hide=True)
+  print('chrome')
+  chrome.quit()
+  print('quit')
+
+
+
 
