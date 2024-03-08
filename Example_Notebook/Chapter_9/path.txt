@@ -1,0 +1,4 @@
+C:\ProgramData\Anaconda3
+C:\ProgramData\Anaconda3\Lib
+C:\ProgramData\Anaconda3\Library\bin
+C:\ProgramData\Anaconda3\Scripts
